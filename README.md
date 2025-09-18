@@ -20,9 +20,11 @@ ciudades = {
     'G': (8, 4),
     'H': (9, 9)
 }
+```
+
 El objetivo es encontrar el recorrido más corto que pase por todas ellas y regrese a la ciudad inicial.
 
-⚙️ Algoritmo Genético implementado
+Algoritmo Genético implementado
 
 El programa sigue los pasos clásicos de un algoritmo genético (GA):
 
@@ -38,10 +40,6 @@ Mutación: Se aplica mutación por intercambio con una tasa determinada para man
 
 Evolución: En cada generación se crea una nueva población, se guarda el mejor individuo y se repite hasta alcanzar el número de generaciones definido.
 
-🧑‍💻 Código completo
-import random
-import math
-import matplotlib.pyplot as plt
 
 # Ciudades dadas con coordenadas
 ciudades = {
@@ -162,12 +160,6 @@ print("Distancia total:", round(distancia_mejor, 2))
 
 graficar_ruta(mejor)
 
-🚀 Ejecución
-
-Para correr el programa:
-
-python tsp_ga.py
-
 
 La salida mostrará la mejor ruta encontrada, su distancia total y además una gráfica en el plano XY con la ruta.
 
@@ -183,10 +175,3 @@ Distancia total: 25.99
 
 Y en la ventana gráfica aparecerá el recorrido marcado con líneas y puntos.
 
-📊 Posibles mejoras
-
-Ajustar parámetros del GA (población, generaciones, tasa_mutacion) para mejorar resultados.
-
-Probar diferentes métodos de selección y cruce.
-
-Extender el código para más ciudades y comparar eficiencia.
