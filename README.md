@@ -154,12 +154,6 @@ def graficar_ruta(ruta):
     plt.show()
 
 # ---- Ejecutar ----
-mejor, distancia_mejor = algoritmo_genetico()
-print("\nMejor ruta encontrada:", mejor)
-print("Distancia total:", round(distancia_mejor, 2))
-
-graficar_ruta(mejor)
-
 
 La salida mostrará la mejor ruta encontrada, su distancia total y además una gráfica en el plano XY con la ruta.
 
@@ -173,5 +167,4 @@ Mejor ruta encontrada: ['C', 'B', 'A', 'D', 'F', 'G', 'E', 'H']
 Distancia total: 25.99
 
 
-Y en la ventana gráfica aparecerá el recorrido marcado con líneas y puntos.
 
